@@ -1,0 +1,108 @@
+.circle-check,.square-check{
+    display: inline-block;
+}
+.circle-check>input[type=checkbox] {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    outline: none;
+    appearance: none;
+    border: 1px solid #ccc;
+}
+
+.circle-check>input[type="checkbox"] {
+    width: 1.64rem;
+    height: 1.64rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: baseline;
+    line-height: 1.64rem;
+    position: relative;
+    border-radius: 50%;
+    outline: none;
+    -webkit-appearance: none;
+    border: 1px solid #fff;
+    -webkit-tab-highlight-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    background: #fff;
+}
+
+.circle-check>input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #999999;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.circle-check>input[type="checkbox"]:checked::before {
+    content: "\2713";
+    background-color: #657AFE;
+    border: 1px solid #657AFE;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.circle-check>input[type="checkbox"]:disabled::before {
+    background: #eee;
+    cursor: default;
+}
+
+.square-check>input[type=checkbox]{
+    overflow: hidden;
+    width: 1.64rem;
+    height: 1.64rem;
+    text-align: center;
+    line-height: 1.2rem;
+    outline: none;
+    vertical-align: baseline;
+    /* 清空表单默认样式：input 突起或者：凹进去的浅灰色背景色 */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: relative;
+    /* 行高颜色  清空移动端样式  解决移动端按钮:点击出现透明灰色样式*/
+    -webkit-tab-highlight-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+.square-check>input[type=checkbox]::before{
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 选中checkbox 没有选中时候：伪元素样式 */
+.square-check>input[type=checkbox]:disabled::before{
+    background-color: #fff;
+}
+.square-check>input[type=checkbox]:checked::before{
+    /* 转义成勾 */
+    content: "\2713";
+    background-color: #657AFE;
+    border: 1px solid #657AFE;
+    /* font-size: 1rem; */
+}
+/* 解决边框 */
+.square-check>input[type=checkbox]:checked{
+    border: 1px solid transparent;
+}
+.square-check>input[type=checkbox]:disabled{
+    border: 1px solid #ccc;
+}

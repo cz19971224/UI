@@ -1,0 +1,986 @@
+/* 
+这是一个全局的css样式库。欢迎使用dzmQueryUI样式库
+*/
+
+/* 清空默认 */
+input {
+  border: none;
+  appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  /* //input标签聚焦不出现默认边框: */
+  -webkit-appearance: none;
+  /* //用于IOS下移除原生样式 */
+}
+
+input:focus {
+  outline: none;
+}
+/* //input标签聚焦不出现默认边框: */
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+button {
+  overflow: visible;
+}
+
+/* 清空表单样式 */
+
+/* 将所有布局类标签 都设置为块元素 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+/* 设置行内块 */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* 清空a标签默认样式 */
+a {
+  background-color: transparent;
+  color: pink;
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: border-box;
+}
+
+/* 清空列表类 */
+ul,
+li,
+ol,
+dd,
+dt {
+  list-style: none;
+}
+
+/* 布局 */
+
+.dzm-container {
+  width: 95%;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dzm-container-fluid {
+  width: 100%;
+  padding: 0px 15px;
+}
+
+/* 按钮组件样式 */
+.mm-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.mm-btn-default {
+  background-color: plum;
+  color: white;
+}
+.mm-btn-success {
+  background-color: #67c23a;
+  color: white;
+}
+
+/* 警告 */
+.mm-btn-warning {
+  background-color: #e6a23c;
+  border-color: #e6a23c;
+  color: white;
+}
+
+/* 错误 */
+.mm-btn-error {
+  border-color: #f56c6c;
+  background-color: #f56c6c;
+  color: white;
+}
+
+/* 取消 */
+.mm-btn-cancel {
+  background-color: #909399;
+  border-color: #909399;
+  color: white;
+}
+
+/* 确认 */
+.mm-btn-sure {
+  background-color: #8bc220;
+  border-color: #8bc220;
+  color: white;
+}
+
+/* 默认 */
+.mm-btn-default {
+  background-color: #2f2f2f;
+  border-color: #2f2f2f;
+  color: white;
+}
+
+/* 危险 */
+.mm-btn-danger {
+  background-color: #ff1022;
+  border-color: #ff1022;
+  color: white;
+}
+
+/* 首选 */
+.mm-btn-primary {
+  background-color: #409eff;
+  border-color: #409eff;
+  color: white;
+}
+
+/* 一般信息 */
+.mm-btn-info {
+  background-color: #01aaed;
+  border-color: #01aaed;
+  color: white;
+}
+
+/* 百搭按钮 */
+.mm-btn-normal {
+  background-color: #f50e89;
+  border-color: #f50e89;
+  color: white;
+}
+
+/* 暖色按钮 */
+.mm-btn-warm {
+  background-color: #ee6604;
+  border-color: #ee6604;
+  color: white;
+}
+
+/* 渐变按钮*/
+
+/* 成功 */
+.mm-btn-success-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(105, 255, 151) 10%,
+    rgb(0, 228, 255) 100%
+  );
+  color: #fff;
+}
+
+/* 警告 */
+.mm-btn-warning-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(253, 110, 106) 10%,
+    rgb(255, 198, 0) 100%
+  );
+  color: #fff;
+}
+
+/* 错误 */
+.mm-btn-error-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(171, 20, 23) 10%,
+    rgb(251, 53, 30) 100%
+  );
+  color: #fff;
+}
+
+/* 取消 */
+.mm-btn-cancel-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(107, 95, 95) 10%,
+    rgb(63, 56, 65) 100%
+  );
+  color: #fff;
+}
+
+/* 确认 */
+.mm-btn-sure-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(206, 159, 252) 10%,
+    rgb(115, 103, 240) 100%
+  );
+  color: #fff;
+}
+
+/* 默认   */
+.mm-btn-default-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(255, 246, 183) 10%,
+    rgb(246, 65, 108) 100%
+  );
+  color: #fff;
+}
+
+/* 危险  */
+.mm-btn-danger-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(247, 97, 161) 10%,
+    rgb(140, 27, 171) 100%
+  );
+  color: #fff;
+}
+
+/* 首选   */
+.mm-btn-primary-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(67, 203, 255) 10%,
+    rgb(151, 8, 204) 100%
+  );
+  color: #fff;
+}
+
+/* 一般信息 */
+.mm-btn-info-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(160, 254, 101) 10%,
+    rgb(250, 1, 109) 100%
+  );
+  color: #fff;
+}
+
+/* 禁止按钮 */
+.mm-btn-disable-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(240, 95, 87) 10%,
+    rgb(54, 9, 64) 100%
+  );
+  color: #fff;
+}
+
+/* 百搭按钮  */
+.mm-btn-normal-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(255, 248, 134) 10%,
+    rgb(240, 114, 182) 100%
+  );
+  color: #fff;
+}
+/* 暖色按钮  */
+.mm-btn-warm-rgb {
+  background-image: linear-gradient(
+    135deg,
+    rgb(253, 216, 25) 10%,
+    rgb(232, 5, 5) 100%
+  );
+  color: #fff;
+}
+
+/* 伪类按钮 */
+
+/* 成功 */
+.mm-btn-success-hover {
+  color: #659eff;
+  background-color: #ecf5ff;
+}
+.mm-btn-success-hover:hover {
+  background-color: #409eff;
+  color: white;
+  cursor: pointer;
+}
+
+/* 警告 */
+.mm-btn-warning-hover {
+  color: #e6a23c;
+  background-color: #fdf6ec;
+}
+.mm-btn-warning-hover:hover {
+  background-color: #e6a23c;
+  color: white;
+  cursor: pointer;
+}
+
+/* 默认 */
+.mm-btn-default-hover {
+  color: #67c23a;
+  background-color: #f0f9eb;
+}
+.mm-btn-default-hover:hover {
+  background-color: #67c23a;
+  color: white;
+  cursor: pointer;
+}
+
+/* 危险 */
+.mm-btn-danger-hover {
+  color: #f66c6c;
+  background-color: #fef0f0;
+}
+
+.mm-btn-danger-hover:hover {
+  background-color: #f56c6c;
+  color: white;
+  cursor: pointer;
+}
+
+/* 型号 */
+
+/* 大  */
+.mm-btn-bg {
+  width: 300px;
+  height: 100px;
+}
+
+/* 小  */
+.mm-btn-sm {
+  width: 100px;
+  height: 30px;
+}
+
+/* 中 */
+.mm-btn-md {
+  width: 250px;
+  height: 50px;
+}
+
+/* 圆角 */
+.mm-btn-radius {
+  border: 1px solid palevioletred;
+  border-radius: 20px 20px 20px 20px;
+  background-color: palevioletred;
+  color: white;
+}
+
+.mm-btn-bg {
+  padding: 8px 15px;
+}
+
+.mm-btn-bg {
+  padding: 4px 10px;
+}
+
+.mm-btn-xs {
+  font-size: 12p;
+  padding: 3px 6px;
+}
+
+/* 表单控件 */
+
+/* 表格样式 */
+/* 清空表格默认样式 */
+table {
+  background-color: transparent;
+  /* 表格塌陷 */
+  border-collapse: collapse;
+  border: 0px;
+}
+th {
+  font-weight: bold;
+  color: #909399;
+}
+.table {
+  width: 100%;
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+.table td {
+  border: 1px solid #e0e0e0;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  color: #606263;
+  padding: 10px 0 10px 15px;
+}
+.table > thead > tr > th {
+  text-align: left;
+  font-weight: 600;
+  color: #606263;
+  padding: 10px 0 10px 15px;
+}
+.table-column > tbody > tr > td {
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+}
+.table-column > tbody > tr > td:first-child {
+  border-left: 1px solid transparent;
+}
+.table-column > tbody > tr > td:last-child {
+  border-right: 1px solid transparent;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #fafafa;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+.table-striped > tbody > tr > td {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+.table-hover > tbody > tr:hover > td {
+  /* background-color: #f5f7fa !important; */
+  /* background-color: #000; */
+  /* color: #fff; */
+  background-color: #ccc !important;
+  border-bottom: 1px solid #ccc !important;
+  color: #fff !important;
+}
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > td,
+.table-condensed > tbody > tr > th {
+  padding: 5px;
+}
+.table > thead > tr > td.warning,
+.table > tbody > tr > td.warning,
+.table > tfoot > tr > td.warning,
+.table > thead > tr > th.warning,
+.table > tbody > tr > th.warning,
+.table > tfoot > tr > th.warning,
+.table > thead > tr.warning > td,
+.table > tbody > tr.warning > td,
+.table > tfoot > tr.warning > td,
+.table > thead > tr.warning > th,
+.table > tbody > tr.warning > th,
+.table > tfoot > tr.warning > th {
+  background-color: #f56c6c;
+  color: #f3e1e1;
+  border-bottom: 1px solid #f56c6c;
+}
+.table > thead > tr > th.info,
+.table > tbody > tr > th.info,
+.table > tfoot > tr > th.info,
+.table > thead > tr.info > td,
+.table > tbody > tr.info > td,
+.table > tfoot > tr.info > td,
+.table > thead > tr.info > th,
+.table > tbody > tr.info > th,
+.table > tfoot > tr.info > th {
+  background-color: #01aaed;
+  color: #d7e5f5;
+  border-bottom: 1px solid #01aaed;
+}
+.table > thead > tr > th.success,
+.table > tbody > tr > th.success,
+.table > tfoot > tr > th.success,
+.table > thead > tr.success > td,
+.table > tbody > tr.success > td,
+.table > tfoot > tr.success > td,
+.table > thead > tr.success > th,
+.table > tbody > tr.success > th,
+.table > tfoot > tr.success > th {
+  background-color: #8bc220;
+  color: #d4f5e2;
+  border-bottom: 1px solid #8bc220;
+}
+.table > thead > tr > th.danger,
+.table > tbody > tr > th.danger,
+.table > tfoot > tr > th.danger,
+.table > thead > tr.danger > td,
+.table > tbody > tr.danger > td,
+.table > tfoot > tr.danger > td,
+.table > thead > tr.danger > th,
+.table > tbody > tr.danger > th,
+.table > tfoot > tr.danger > th {
+  background-color: #ff1022;
+  color: #f7cdc7;
+  border-bottom: 1px solid #ff1022;
+}
+.table > thead > tr > th.primary,
+.table > tbody > tr > th.primary,
+.table > tfoot > tr > th.primary,
+.table > thead > tr.primary > td,
+.table > tbody > tr.primary > td,
+.table > tfoot > tr.primary > td,
+.table > thead > tr.primary > th,
+.table > tbody > tr.primary > th,
+.table > tfoot > tr.primary > th {
+  background-color: #ffb800;
+  color: #f7e8c0;
+  border-bottom: 1px solid #ffb800;
+}
+.table > thead > tr > th.warm,
+.table > tbody > tr > th.warm,
+.table > tfoot > tr > th.warm,
+.table > thead > tr.warm > td,
+.table > tbody > tr.warm > td,
+.table > tfoot > tr.warm > td,
+.table > thead > tr.warm > th,
+.table > tbody > tr.warm > th,
+.table > tfoot > tr.warm > th {
+  background-color: hsl(51, 93%, 54%);
+  border-bottom: 1px solid hsl(51, 93%, 54%);
+  color: #f7f8ac;
+}
+.table-border > tbody > tr > td,
+.table-border > thead > tr > th,
+.table-border > tfoot > tr > td {
+  border: 1px solid #e0e0e0;
+}
+
+/* 黑色表格 */
+.table-inverse {
+  background-color: #393d49;
+}
+.table-inverse > tbody > tr > td {
+  text-align: center;
+  color: #ccc;
+  border-bottom: 1px solid #333332;
+}
+.table-inverse > thead > tr > th,
+.table-inverse > tfoot > tr > td,
+.table-inverse > tbody > tr > th {
+  text-align: center;
+  color: #a6b1b1;
+  border-bottom: 2px solid #000;
+}
+.table-inverse > thead > tr > th:last-child,
+.table-inverse > tfoot > tr > td:last-child,
+.table-inverse > tbody > tr > th:last-child {
+  border-right: 1px solid #393d49;
+}
+
+.table-inverse-striped > tbody > tr:nth-of-type(odd) > td {
+  background-color: #303242;
+  border-bottom: 1px solid #393d49;
+  color: rgb(138, 140, 156);
+  text-align: center;
+}
+.table-inverse-striped > tbody > tr:nth-of-type(even) > td {
+  background-color: #393d49;
+  border-bottom: 1px solid #303242;
+  color: #ccc;
+  text-align: center;
+}
+.table-inverse-striped > thead > tr > th,
+.table-inverse-striped > tbody > tr > th {
+  background-color: #393d49;
+  border-bottom: 1px solid #303242;
+  color: #ccc;
+  font-weight: 900;
+  text-align: center;
+}
+
+.table-inverse-hover.table-inverse > tbody > tr:hover > td,
+.table-inverse-hover.table-inverse-striped > tbody > tr:hover > td {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 写兼容那个移动端的表格； */
+@media screen and (max-width: 768px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    /* overflow-style: autohiding-scrollbar; */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #e0e0e0;
+  }
+  .table-responsive {
+    /* 当到达移动端收；不让加大高度 */
+    min-height: 0.01%;
+    overflow-x: auto;
+  }
+  /* 实现横向滚动表格 */
+  @media screen and (max-width: 768px) {
+    .table-responsive > .table > thead > tr > th,
+    .table-responsive > .table > tbody > tr > th,
+    .table-responsive > .table > tfoot > tr > th,
+    .table-responsive > .table > thead > tr > td,
+    .table-responsive > .table > tbody > tr > td,
+    .table-responsive > .table > tfoot > tr > td {
+      width: 1%;
+      min-width: 1%;
+      white-space: nowrap;
+    }
+  }
+}
+
+/* 没有做等宽 选择器
+  给td设置最小宽度
+  */
+
+/* 分页 */
+/* 这里面 写分页的样式 */
+.page {
+  width: 100%;
+}
+
+.pagination {
+  display: inline-block;
+  margin: 0px -15px;
+}
+
+.pagination > li > a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #303030;
+}
+
+.pagination > li {
+  display: inline-block;
+  /* float: left; */
+  list-style: none;
+}
+/* 清除浮动 */
+
+.pagination-bgc > li > a {
+  background-color: #f4f4f5;
+  color: #303133;
+  font-size: 12px;
+  font-weight: 900;
+  border: 1px solid #f4f4f5;
+}
+
+.pagination-bgc .active > a {
+  color: #f4f4f5;
+  background-color: #40b6ff;
+}
+.pagination-bgc > li > a:hover {
+  background-color: #40b6ff;
+  color: #f4f4f5;
+}
+
+.pagination-noBgc > li > a {
+  color: #303133;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid transparent;
+  font-weight: 900;
+}
+
+.pagination-noBgc .active > a {
+  color: #40b6ff;
+}
+.pagination-noBgc > li > a:hover {
+  color: #40b6ff;
+}
+
+.pagination-inverse > li > a {
+  background-color: #393d49;
+  color: #ccc;
+  font-size: 14px;
+  border: 1px solid #393d49;
+  padding: 5px 10px;
+}
+.pagination-inverse .active > a {
+  background-color: black;
+  color: #ccc;
+  border:1px solid black;
+}
+.pagination-inverse > li {
+  float: left;
+}
+.pagination-inverse > li > a:hover {
+  background-color: black;
+  color: #fff;
+  border:1px solid black;
+}
+
+.pagination-inverse-lg > li > a {
+  background-color: #393d49;
+  color: #ccc;
+  font-size: 16px;
+  border: 1px solid #393d49;
+  padding: 8px 12px;
+}
+
+.pagination-inverse-lg > li > a:hover {
+  background-color: black;
+  color: #fff;
+  border:1px solid black;
+}
+.pagination-inverse-lg > li {
+  float: left;
+}
+.pagination-inverse-lg .active > a {
+  background-color: black;
+  color: #ccc;
+  border:1px solid black;
+}
+
+/* 辅助类 */
+.circle-check,.square-check,.check-content{
+  display: inline-block;
+}
+.circle-check,.check-content{
+  margin-left: 10px;
+}
+.square-check .check-content{
+  margin-left: 10px;
+}
+.circle-check input[type="checkbox"]{
+  width:1.64rem;
+  height:1.64rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align:middle; 
+  line-height: 1.44rem;
+  position: relative;
+  border-radius: 50%;
+  outline: none;
+  -webkit-appearance: none;
+  border:1px solid #fff;
+  /* 解决移动端页面点击图标或按钮产生透明灰色背景 */
+  -webkit-tab-highlight-color: rgba(0,0,0,0);
+  color: #fff;
+  background: #fff;
+}
+.circle-check input[type="checkbox"]::before{
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  color: #fff;
+}
+.circle-check input[type="checkbox"]:checked::before{
+  content: "\2713";
+  background-color: #657AFE;
+   border: 1px solid #657AFE;
+   
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  color:#fff;
+  font-size: 0.82rem;
+  border-radius: 50%;
+}
+.circle-check input[type="checkbox"]:disabled::before{
+    background: #eee;
+    cursor: default;
+}
+
+.square-check>input[type=checkbox]{
+  overflow: hidden;
+  width: 1.64rem;
+  height: 1.64rem;
+  text-align: center;
+  line-height: 1.2rem;
+  outline: none;
+  vertical-align: middle;
+  /* 清空表单默认样式：input 突起或者：凹进去的浅灰色背景色 */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  position: relative;
+  /* 行高颜色  清空移动端样式  解决移动端按钮:点击出现透明灰色样式*/
+  -webkit-tab-highlight-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+.square-check>input[type=checkbox]::before{
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 选中checkbox 没有选中时候：伪元素样式 */
+.square-check>input[type=checkbox]:disabled::before{
+  background-color: #fff;
+}
+.square-check>input[type=checkbox]:checked::before{
+  /* 转义成勾 */
+  content: "\2713";
+  background-color: #657AFE;
+  border: 1px solid #657AFE;
+  /* font-size: 1rem; */
+}
+/* 解决边框 */
+.square-check>input[type=checkbox]:checked{
+  border: 1px solid transparent;
+}
+.square-check>input[type=checkbox]:disabled{
+  border: 1px solid #ccc;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* 清空input 默认样式 */
+input{
+  /* 输入框没有边框 */
+  border: none;
+  /* 清空默认样式 输入框样式 按钮样式 选择款样式 */
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /* 获取焦点时的默认样式 */
+  outline: none;
+  -webkit-appearance: none;
+  -moz-outline:none;
+}
+
+/* 默认的form-group */
+.form-group{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-control{
+  display: block;
+  border:1px solid #ccc;
+  padding: 10px 10px;
+  width: 100%;
+}
+/* input 获取焦点 .form-control显示的样式 */
+/* 可以其他元素变为表单元素 :focus 值针对有可以获取焦点的元素*/
+.form-group .form-control:focus{
+  outline: 1px solid #409eff;
+  /* height: 100px; */
+}
+.form-label{
+  display: inline-block;
+  font-weight: bolder;
+  padding-bottom: 5px;
+  padding: 5px 3px 5px 5px;
+}
+
+/* 
+基础样式  权重最低 随时可以附带 代替 
+
+可选择样式  在基础样式基础上进行样式添加 通过权重级别高低来覆盖样式
+自当以：给用户足够空间 让用户通过 搭建不同结构 自己进行样式添加
+
+结构：1 占多少份 2 如何布局 3
+*/
+
+@media screen and (min-width:768px) {
+  .form-inline .form-group {
+      display: inline-block;
+      /* auto自动 宽度由子元素撑起 */
+      width: auto;
+  }
+
+  .form-inline .form-control {
+      display: inline-block;
+      width: auto;
+      padding: 6px 12px;
+  }
+
+  .form-horizontal {
+      text-align: center;
+  }
+
+  .form-horizontal .form-group::after {
+      content: '';
+      display: table;
+  }
+
+  .form-horizontal .form-label {
+      /* float: left; */
+      display: inline-block;
+      max-width: 100%;
+      min-width: 16.6666667%;
+      width: auto;
+      text-align: right;
+      padding: 6px 12px;
+  }
+
+  .form-horizontal .form-control {
+      /* float: left; */
+      display: inline-block;
+      margin-left: -5px;
+      min-width: 83.3333333%;
+      max-width: 100%;
+      width: auto;
+  }
+
+  .form-horizontal .form-check {
+      /* float: left; */
+      display: inline-block;
+      margin-left: -5px;
+      min-width: 83.3333333%;
+      max-width: 100%;
+      width: auto;
+      vertical-align: text-top;
+      text-align: left;
+  }
+
+  .form-horizontal .form-group {
+      width: 100%;
+  }
+
+
+  .form-check>.form-check-item {
+  display: inline-block;
+  margin-left: -4px;
+  /* float: left; */
+  width: 33%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+}
